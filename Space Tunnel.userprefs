@@ -1,0 +1,19 @@
+﻿<Properties StartupConfiguration="{6CBB6121-7303-E22F-8198-782FB08E2AF3}|">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/LaserStopperController.cs">
+    <Files>
+      <File FileName="Assets/Scripts/PlayerController.cs" Line="54" Column="5" />
+      <File FileName="Assets/Scripts/CameraController.cs" Line="26" Column="9" />
+      <File FileName="Assets/Scripts/LaserController.cs" Line="10" Column="9" />
+      <File FileName="Assets/Scripts/LaserStopperController.cs" Line="19" Column="85" />
+      <File FileName="Assets/Scripts/EnemyController.cs" Line="35" Column="18" />
+      <File FileName="Assets/Scripts/NextSceneController.cs" Line="19" Column="37" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.Space_220Tunnel PreferredExecutionTarget="Unity.Editor" />
+</Properties>

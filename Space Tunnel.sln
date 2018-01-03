@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio for Mac
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Space Tunnel", "Space Tunnel.csproj", "{6CBB6121-7303-E22F-8198-782FB08E2AF3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Space Tunnel.Editor", "Space Tunnel.Editor.csproj", "{EB5BB8A1-8506-CC28-9315-15DAE20993EA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6CBB6121-7303-E22F-8198-782FB08E2AF3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6CBB6121-7303-E22F-8198-782FB08E2AF3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6CBB6121-7303-E22F-8198-782FB08E2AF3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6CBB6121-7303-E22F-8198-782FB08E2AF3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EB5BB8A1-8506-CC28-9315-15DAE20993EA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EB5BB8A1-8506-CC28-9315-15DAE20993EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EB5BB8A1-8506-CC28-9315-15DAE20993EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EB5BB8A1-8506-CC28-9315-15DAE20993EA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
