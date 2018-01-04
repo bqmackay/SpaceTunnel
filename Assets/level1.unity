@@ -401,7 +401,7 @@ GameObject:
   - component: {fileID: 182124893}
   m_Layer: 5
   m_Name: Retry Button
-  m_TagString: Finish
+  m_TagString: Retry
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -476,7 +476,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 914444179}
-        m_MethodName: AddKillToScore
+        m_MethodName: Restart
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3389,6 +3389,11 @@ Prefab:
       propertyPath: winText
       value: 
       objectReference: {fileID: 1439675503}
+    - target: {fileID: 114252925811597636, guid: e2a563409f05b26429e07cb45c0d2ea2,
+        type: 2}
+      propertyPath: retryButton
+      value: 
+      objectReference: {fileID: 182124894}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e2a563409f05b26429e07cb45c0d2ea2, type: 2}
   m_IsPrefabParent: 0

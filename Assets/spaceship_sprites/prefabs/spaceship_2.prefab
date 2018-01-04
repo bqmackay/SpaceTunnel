@@ -11,8 +11,8 @@ GameObject:
   - component: {fileID: 21296622}
   - component: {fileID: 9509168}
   - component: {fileID: 50696681953753516}
-  - component: {fileID: 61236850770274852}
   - component: {fileID: 114252925811597636}
+  - component: {fileID: 60733289474223978}
   m_Layer: 0
   m_Name: spaceship_2
   m_TagString: Untagged
@@ -256,8 +256,8 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!61 &61236850770274852
-BoxCollider2D:
+--- !u!60 &60733289474223978
+PolygonCollider2D:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
@@ -278,9 +278,17 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.27, y: 0.4}
-  m_EdgeRadius: 0
+  m_Points:
+    m_Paths:
+    - - {x: -0.091689646, y: 0.18168966}
+      - {x: -0.13626724, y: 0.16542244}
+      - {x: -0.13626724, y: 0.16969725}
+      - {x: -0.13626724, y: 0}
+      - {x: -0.044577584, y: -0.18626732}
+      - {x: 0.04373279, y: -0.18626732}
+      - {x: 0.14084491, y: 0.0011983117}
+      - {x: 0.14084482, y: 0.16542244}
+      - {x: 0.103379294, y: 0.18626724}
 --- !u!61 &61244631115362992
 BoxCollider2D:
   m_ObjectHideFlags: 1
@@ -345,9 +353,9 @@ MonoBehaviour:
   laser: {fileID: 50285513791245238, guid: b0f94b1c110d3490db5f5a7d04644686, type: 2}
   laser_speed: 30
   cannon: {fileID: 1004657509824634}
-  scoreText: {fileID: 114371971824849684, guid: ad2c00e2471974816a7be960c385f781,
-    type: 2}
-  winText: {fileID: 114673593415005992, guid: 9029af309f2c7462a9b94d1d2cb9ed2e, type: 2}
+  scoreText: {fileID: 0}
+  winText: {fileID: 0}
+  retryButton: {fileID: 0}
 --- !u!114 &114321357969891014
 MonoBehaviour:
   m_ObjectHideFlags: 1

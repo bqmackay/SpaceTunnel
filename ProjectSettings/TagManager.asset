@@ -8,6 +8,7 @@ TagManager:
   - WorldObject
   - Exit
   - Goal
+  - Retry
   layers:
   - Default
   - TransparentFX
