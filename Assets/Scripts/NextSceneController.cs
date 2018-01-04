@@ -10,4 +10,8 @@ public class NextSceneController : MonoBehaviour {
         Debug.Log("On Trigger Entered");
         SceneManager.LoadScene("Game");
     }
+
+    public void Restart() {
+        SceneManager.LoadScene(0);
+    }
 }

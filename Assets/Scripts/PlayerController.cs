@@ -14,7 +14,7 @@ public class PlayerController : MonoBehaviour
     private int score;
     public Text scoreText;
     public Text winText;
-
+    public Button retryButton;
     private bool movable = true;
 
     void OnTriggerEnter2D(Collider2D other)
@@ -22,18 +22,24 @@ public class PlayerController : MonoBehaviour
         Debug.Log("On Trigger");
         Debug.Log(other.gameObject.tag);
         if (other.gameObject.tag == "Enemy") {
-            Destroy(gameObject);
+            gameObject.SetActive(false);
             winText.text = "You Lose :(";
+            showFinishedTags();
         } else if (other.gameObject.tag == "Goal") {
             winText.text = "You Win :)";
             movable = false;
             Destroy(other.gameObject);
+            showFinishedTags();
             GameObject[] enemies = GameObject.FindGameObjectsWithTag("Enemy");
             foreach (GameObject e in enemies) {
                 EnemyController controller = e.GetComponent<EnemyController>();
                 controller.DestroyEnemy();
             }
         }
+    }
+
+    private void showFinishedTags() {
+        retryButton.gameObject.SetActive(true);
     }
 
     void FixedUpdate()
@@ -66,6 +72,11 @@ public class PlayerController : MonoBehaviour
 
     }
 
+    public void Restart()
+    {
+        SceneManager.LoadScene(0);
+    }
+
     private void FireLaser() {
         Rigidbody2D laserClone = (Rigidbody2D)Instantiate(laser, cannon.transform.position, laser.transform.rotation);
         if (rb2d.rotation == 90) {
@@ -89,6 +100,7 @@ public class PlayerController : MonoBehaviour
         score = 0;
         setScore();
         winText.text = "";
+        retryButton.gameObject.SetActive(false);
     }
 
     private void setScore() {

@@ -27,6 +27,9 @@ public class EnemyController : MonoBehaviour {
     private void FixedUpdate()
     {
         //transform.LookAt(player.transform);
+        if (player == null) {
+            return;
+        }
         RaycastHit2D raycast = Physics2D.Linecast(transform.position, player.transform.position, 1<<8);
         if (raycast.collider == null)
         {
